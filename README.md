@@ -11,3 +11,4 @@ This library can also be used as a reference by anyone who has already had exper
 2. [Singly Linked List]()
 3. [Circularly Linked List]()
 4. [Round Robin CPU Scheduling Algorithm]()
+5. [Doubly Linked List]()
