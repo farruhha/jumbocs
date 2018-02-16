@@ -20,3 +20,5 @@ This library can also be used as a reference by anyone who has already had exper
 2. [English Ruler]()
 3. [Binary Search]()
 4. [File System]()
+5. [Linear Recursion]()
+6. [Binary Recursion]()
