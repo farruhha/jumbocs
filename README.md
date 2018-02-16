@@ -8,7 +8,15 @@ This library can also be used as a reference by anyone who has already had exper
 ## Fundamental Data Structure 
 
 1. [Tic Tac Implementation]()
-2. [Singly Linked List]()
-3. [Circularly Linked List]()
-4. [Round Robin CPU Scheduling Algorithm]()
-5. [Doubly Linked List]()
+2. [Singly Linked List](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/datastructures/singlylinkedlist)
+3. [Circularly Linked List](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/datastructures/circularlylinkedlist)
+4. [Round Robin CPU Scheduling Algorithm](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/datastructures/roundrobinscheduler)
+5. [Doubly Linked List](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/datastructures/doublylinkedlist)
+
+
+## Recursion
+
+1. [Factorial Function]()
+2. [English Ruler]()
+3. [Binary Search]()
+4. [File System]()
