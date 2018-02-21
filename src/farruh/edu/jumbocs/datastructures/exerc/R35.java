@@ -1,10 +1,9 @@
-package farruh.edu.jumbocs.datastructures.circularlylinkedlist;
+package farruh.edu.jumbocs.datastructures.exerc;
 
-import farruh.edu.jumbocs.datastructures.singlylinkedlist.SinglyLinkedList;
 
-public class CircularlyLinkedList <E>{
-
-    /*
+public class R35<E> {
+    
+     /*
     * size() Returns the number of elements
     * isEmpty() Returns true if the list is empty and false otherwise
     * first() Returns (but does not remove) the first element in the list
@@ -35,59 +34,72 @@ public class CircularlyLinkedList <E>{
         }
     }
 
+    private Node<E> head = null;
     private Node<E> tail = null;
+
     private int size = 0;
-    public CircularlyLinkedList(){
+
+    public R35() {
 
     }
 
-    public int size(){
+    public int size() {
         return size;
     }
-    public boolean isEmpty(){
+
+    public boolean isEmpty() {
         return size == 0;
     }
-    public E first(){
-        if (isEmpty()){
+
+    public E first() {
+        if (isEmpty()) {
             return null;
         }
-        return tail.getNext().getElement();
+        return head.getElement();
     }
 
-    public E last(){
-        if (isEmpty()){
+    public E last() {
+        if (isEmpty()) {
             return null;
         }
         return tail.getElement();
     }
 
-    public void rotate(){
-        if (tail != null){
-            tail = tail.getNext();
-        }
-    }
-
-    public void addFirst(E e){
-        if (size == 0){
-            tail = new Node<>(e,null);
-            tail.setNext(tail);
-        }else{
-            tail.setNext(new Node<>(e, tail.getNext()));
+    public void addFirst(E e) {
+        head = new Node<>(e, head);
+        if (size == 0) {
+            tail = head;
         }
         size++;
     }
 
-    public void addLast(E e){
-        addFirst(e);
-        tail = tail.getNext();
+    public void addLast(E e) {
+        Node<E> newest = new Node<>(e, null);
+        if (isEmpty()) {
+            head = newest;
+        } else {
+            tail.setNext(newest);
+        }
+        tail = newest;
+        size++;
     }
 
-    public E removeFirst(){
-        if (isEmpty()) return null;
-        Node<E> head = tail.getNext();
-        if (head == null) tail = null;
-        else tail.setNext(head.getNext());
+    public E removeFirst() {
+        if (isEmpty()) {
+            return null;
+        }
+        E answer = head.getElement();
+        head = head.getNext();
         size--;
-        return head.getElement();
+
+        if (size == 0) {
+            tail = null;
+        }
+        return answer;
+    }
+
+    public Node<E> secondToLast() {
+        Node<E> newNode = head.getNext();
+        return newNode;
     }
 }
