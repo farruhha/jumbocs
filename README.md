@@ -16,9 +16,17 @@ This library can also be used as a reference by anyone who has already had exper
 
 ## Recursion
 
-1. [Factorial Function]()
-2. [English Ruler]()
-3. [Binary Search]()
-4. [File System]()
-5. [Linear Recursion]()
-6. [Binary Recursion]()
+1. [Factorial Function](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/recursion)
+2. [English Ruler](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/recursion)
+3. [Binary Search](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/recursion)
+4. [File System](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/recursion)
+5. [Linear Recursion](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/recursion)
+6. [Binary Recursion](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/recursion)
+
+## Stacks Queues and Deques
+
+1. [Array Stack]()
+2. [Linked Stack]()
+3. [Reversing an Array Using a Stack]()
+4. [Matching Parentheses and HTML Tags]()
+
