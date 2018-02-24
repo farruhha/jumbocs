@@ -29,4 +29,5 @@ This library can also be used as a reference by anyone who has already had exper
 2. [Linked Stack]()
 3. [Reversing an Array Using a Stack]()
 4. [Matching Parentheses and HTML Tags]()
-
+5. [Array Queue]()
+6. [Linked List Queue]()
