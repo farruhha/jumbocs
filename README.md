@@ -25,9 +25,12 @@ This library can also be used as a reference by anyone who has already had exper
 
 ## Stacks Queues and Deques
 
-1. [Array Stack]()
-2. [Linked Stack]()
-3. [Reversing an Array Using a Stack]()
-4. [Matching Parentheses and HTML Tags]()
-5. [Array Queue]()
-6. [Linked List Queue]()
+1. [Array Stack](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/stackqueuedequeue/stack)
+2. [Linked Stack](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/stackqueuedequeue/stack)
+3. [Reversing an Array Using a Stack](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/stackqueuedequeue/stack)
+4. [Matching Parentheses and HTML Tags](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/stackqueuedequeue/stack)
+5. [Array Queue](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/stackqueuedequeue/queue)
+6. [Linked List Queue](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/stackqueuedequeue/queue)
+7. [Circular Queue](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/stackqueuedequeue/queue)
+8. [Josephus Problem](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/stackqueuedequeue/queue)
+9. [Double-Ended Queues](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/stackqueuedequeue/deque)
