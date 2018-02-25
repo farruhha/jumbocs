@@ -34,3 +34,4 @@ This library can also be used as a reference by anyone who has already had exper
 7. [Circular Queue](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/stackqueuedequeue/queue)
 8. [Josephus Problem](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/stackqueuedequeue/queue)
 9. [Double-Ended Queues](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/stackqueuedequeue/deque)
+10. [Exercises]()
