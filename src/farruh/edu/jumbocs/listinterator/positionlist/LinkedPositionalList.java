@@ -1,6 +1,14 @@
 package farruh.edu.jumbocs.listinterator.positionlist;
 
-public class LinkedPositionalList<E> implements PositionalList<E> {
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
+public class LinkedPositionalList<E> implements PositionalList<E>, Iterable<Position<E>> {
+
+    @Override
+    public Iterator<Position<E>> iterator() {
+        return null;
+    }
 
     private static class Node<E> implements Position<E> {
         private E element;
@@ -155,5 +163,61 @@ public class LinkedPositionalList<E> implements PositionalList<E> {
         node.setNext(null);
         node.setPrev(null);
         return answer;
+    }
+
+    private class PositionIterator implements Iterator<Position<E>> {
+        private Position<E> cursor = first();
+        private Position<E> recent = null;
+
+        @Override
+        public boolean hasNext() {
+            return cursor != null;
+        }
+
+        @Override
+        public Position<E> next() throws NoSuchElementException {
+            if (cursor == null) throw new NoSuchElementException("nothing self");
+            recent = cursor;
+            cursor = after(cursor);
+            return recent;
+        }
+
+        @Override
+        public void remove() {
+
+            if (recent == null) throw new IllegalStateException("nothing to remove");
+            LinkedPositionalList.this.remove(recent);
+            recent = null;
+        }
+    }
+
+    private class PositionIterable implements Iterable<Position<E>> {
+
+        @Override
+        public Iterator<Position<E>> iterator() {
+            return new PositionIterator();
+        }
+    }
+
+    public Iterable<Position<E>> positions() {
+        return new PositionIterable();
+    }
+
+    private class ElementIterator implements Iterator<E> {
+        Iterator<Position<E>> positionIterator = new PositionIterator();
+
+        public boolean hasNext() {
+            return positionIterator.hasNext();
+        }
+
+
+        @Override
+        public E next() {
+            return positionIterator.next().getElement();
+        }
+
+        public void remove() {
+            positionIterator.remove();
+        }
     }
 }

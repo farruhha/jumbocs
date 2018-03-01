@@ -1,6 +1,9 @@
 package farruh.edu.jumbocs.listinterator.arraylist;
 
-public class ArrayList<E> implements List<E> {
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
+public class ArrayList<E> implements List<E>, Iterable<E> {
     public static final int CAPACITY = 16;
     private E[] data;
     private int size = 0;
@@ -44,7 +47,7 @@ public class ArrayList<E> implements List<E> {
             throw new IllegalStateException("Array is full");
         }
         for (int j = size - 1; j >= i; j++) {
-            data[j+1] = data[j];
+            data[j + 1] = data[j];
         }
         data[i] = e;
         size++;
@@ -55,16 +58,47 @@ public class ArrayList<E> implements List<E> {
         checkIndex(i, size);
         E temp = data[i];
 
-        for (int j = i; j < size - 1 ; j++) {
-            data[j] = data[j+1];
+        for (int j = i; j < size - 1; j++) {
+            data[j] = data[j + 1];
         }
         data[size - 1] = null;
-        size --;
+        size--;
         return temp;
     }
 
     protected void checkIndex(int i, int n) throws IndexOutOfBoundsException {
         if (i < 0 || i >= n)
             throw new IndexOutOfBoundsException("Illegal Index :" + i);
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+        return new ArrayIterator();
+    }
+
+    private class ArrayIterator implements Iterator<E> {
+        private int j = 0;
+        private boolean removable = false;
+
+
+        @Override
+        public boolean hasNext() {
+            return j < size;
+        }
+
+        @Override
+        public E next() throws NoSuchElementException {
+            if (j == size) throw new NoSuchElementException("No next element");
+            removable = true;
+            return data[j++];
+        }
+
+        @Override
+        public void remove() {
+            if (!removable) throw new IllegalStateException("nothing to remove");
+            ArrayList.this.remove(j - 1);
+            j--;
+            removable = false;
+        }
     }
 }
