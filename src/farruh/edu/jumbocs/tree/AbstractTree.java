@@ -35,4 +35,12 @@ public abstract class AbstractTree<T> implements TreeADT<T> {
         }
         return h;
     }
+
+    public int height(Position<T> p) {
+        int h = 0;
+        for (Position<T> o : children(p)) {
+            h = Math.max(h, 1 + height(o));
+        }
+        return h;
+    }
 }
