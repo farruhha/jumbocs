@@ -38,14 +38,15 @@ This library can also be used as a reference by anyone who has already had exper
 
 ## List and Iterator ADTs
 
-1. [Array List]()
-2. [Positional Lists]()
-3. [Array List Iterator]()
-4. [Positional List Iterator]()
+1. [Array List](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/listinterator)
+2. [Positional Lists](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/listinterator)
+3. [Array List Iterator](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/listinterator)
+4. [Positional List Iterator](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/listinterator())
 
 ## Tree
 
-1. [Tree ADT]()
-2. [Abstract Tree]()
-3. [Abstract Binary Tree]()
-4. [Linked Binary Tree Impl]()
+1. [Tree ADT](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/tree)
+2. [Abstract Tree](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/tree)
+3. [Abstract Binary Tree](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/tree)
+4. [Linked Binary Tree Impl](https://github.com/farruhx/jumbocs/tree/master/src/farruh/edu/jumbocs/tree)
+5. [Priority Queue]()
